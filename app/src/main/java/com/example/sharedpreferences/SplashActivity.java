@@ -1,12 +1,9 @@
 package com.example.sharedpreferences;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.Log;
-
-import com.example.sharedpreferences.helper.SharedPref;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -19,7 +16,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if (SharedPref.getInstance(SplashActivity.this).isLogin()){
-                    Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+                    Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                     startActivity(intent);
                 }else{
                     Intent intent = new Intent( SplashActivity.this,LoginActivity.class);

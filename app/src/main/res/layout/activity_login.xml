@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
     android:layout_centerInParent="true"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/colorUngu2">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,17 +24,19 @@
             android:layout_marginBottom="50dp"/>
 
     <EditText
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Username"
-        android:layout_marginHorizontal="30dp"/>
+        android:layout_marginHorizontal="50dp"/>
 
 
     <EditText
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
-        android:layout_marginHorizontal="30dp"/>
+        android:layout_marginHorizontal="50dp"/>
 
 
         <LinearLayout
@@ -49,19 +52,20 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
                 android:text="Login"
-                android:layout_margin="5dp"/>
+                android:layout_marginRight="30dp"/>
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
                 android:text="Register"
-                android:layout_margin="5dp"/>
+                android:layout_marginLeft="30dp"/>
         </LinearLayout>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Forgot"/>
 
     </LinearLayout>
